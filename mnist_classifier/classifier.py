@@ -112,7 +112,7 @@ def model(x):
 
     with tf.name_scope('fc'):
 
-        resize_height = 5
+        resize_height = 4
 
         x = tf.reshape(x8, [-1, 256*resize_height*resize_height])
         weights1 = init_weights(256*resize_height*resize_height, 256)
